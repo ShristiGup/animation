@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Animation</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body id="high">
+   <h1 id="head">
+       Here's an image
+   </h1> 
+   
+   <img src="images/img13.jpg" alt="A beautiful scene" id="picture">
+   
+<button id="b1" onclick="pic_styler()">
+    Click me to see something new
+</button>
+<script>
+function pic_styler(){
+    var picture= document.getElementById('picture');
+var high=document.getElementById('high');
+    picture.style.borderRadius="30px";
+    picture.style.border="10px double green";
+    high.style.backgroundColor="coral";
+
+setTimeout(function(){
+    picture.style.borderRadius="100px";
+    picture.style.border="10px solid blue";
+    high.style.backgroundColor="pink";
+},500);
+
+setTimeout(function(){
+    picture.style.borderRadius="150px";
+    picture.style.border="20px dotted maroon";
+    high.style.backgroundColor="lightcoral";
+},1000);
+
+setTimeout(function(){
+    picture.style.borderRadius="400px";
+    picture.style.border="30px dashed orange";
+    high.style.backgroundColor="peru";
+},1500);
+
+setTimeout(function(){
+    picture.style.borderRadius="400px";
+    picture.style.border="35px ridge red";
+    high.style.backgroundColor="yellow";
+},2000);
+
+setTimeout(function(){
+    picture.style.display="none";
+    high.style.backgroundColor="rgba(0, 255, 136, 0.884)";
+},2500);
+
+setTimeout(function(){
+    picture.style.display="";
+},3500);
+
+
+
+setInterval(pic_styler,3500);
+
+}
+
+
+</script>
+</body>
+</html>

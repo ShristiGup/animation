@@ -1,0 +1,38 @@
+#high{
+    background-color:rgba(0, 255, 136, 0.884);
+}
+
+#picture{
+    position:absolute;
+    height:50%;
+ width:50%;
+ display:block;
+ top:120px;
+  left:350px;
+  border:5px groove violet;
+  
+}
+#b1{
+    top:530px;
+    left:200px;
+    position:relative;
+    width:30%;
+    padding:2%;
+    color:navy;
+    background-color: aquamarine;
+    font-size:1.5em;
+    font-family:'Times New Roman', Times, serif;
+    border:1px solid blue;
+    margin-bottom: 20%;
+}
+#head{
+    position:relative;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size:2em;
+    color:red;
+    background-color:white;
+    display:inline-block;
+    left:40%;
+    border:1px solid black;
+    box-shadow:2px 2px 6px gray;
+}
